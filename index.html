@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoGrabber - YouTube Downloader</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>Video<span>Grabber</span></h1>
+                </div>
+                <ul class="menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Free YouTube Downloader</h1>
+                <p>Download YouTube videos in MP4 or convert to MP3 in seconds</p>
+                
+                <div class="search-container">
+                    <input type="text" id="videoUrl" placeholder="Paste YouTube link here...">
+                    <button id="convertBtn">Convert</button>
+                </div>
+                
+                <div id="result" class="hidden">
+                    <div class="video-info">
+                        <img id="thumbnail" src="" alt="Video thumbnail">
+                        <div class="video-details">
+                            <h3 id="videoTitle"></h3>
+                            <p id="videoDuration"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="download-options">
+                        <div class="format-selector">
+                            <button class="format-btn active" data-format="mp4">MP4</button>
+                            <button class="format-btn" data-format="mp3">MP3</button>
+                        </div>
+                        
+                        <div class="quality-options">
+                            <div id="mp4Options" class="quality-list">
+                                <!-- MP4 quality options will be inserted here -->
+                            </div>
+                            <div id="mp3Options" class="quality-list hidden">
+                                <!-- MP3 quality options will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="loading" class="hidden">
+                    <div class="spinner"></div>
+                    <p>Converting... Please wait</p>
+                </div>
+                
+                <div id="download" class="hidden">
+                    <button id="downloadBtn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                    <p>Your file is ready to download!</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Why Choose VideoGrabber</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <img src="./images/clock.svg" alt="Fast and easy to use">
+                        <h3>Fast and easy to use</h3>
+                        <p>Convert and download videos in just a few clicks</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="./images/limit.svg" alt="Without limitation">
+                        <h3>Without limitation</h3>
+                        <p>Download videos of any length without restrictions</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="./images/safe.svg" alt="Safe and Clean">
+                        <h3>Safe and Clean</h3>
+                        <p>No malware, adware, or spyware - just clean downloads</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="./images/platform.svg" alt="Full platforms supported">
+                        <h3>All platforms supported</h3>
+                        <p>Works on desktop, mobile, tablets, and all modern browsers</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="./images/support.svg" alt="Full file format supported">
+                        <h3>Multiple formats supported</h3>
+                        <p>Get your videos in MP4, WebM or convert to MP3</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="./images/cloud.svg" alt="Cloud support">
+                        <h3>Cloud support</h3>
+                        <p>Fast conversion using our powerful cloud servers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>Is VideoGrabber a free service?</h3>
+                        <p>Yes, VideoGrabber is a completely free online YouTube video downloader with no hidden fees.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are there any limitations on the video length that can be downloaded?</h3>
+                        <p>VideoGrabber allows users to download YouTube videos of any duration without restrictions.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I download videos in high definition (HD) format?</h3>
+                        <p>Yes, VideoGrabber supports high-definition video downloads, providing options for various video qualities and resolutions.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I use VideoGrabber on my mobile device?</h3>
+                        <p>Absolutely! VideoGrabber works on all devices including smartphones, tablets, laptops, and desktop computers.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How long does it take to convert and download a YouTube video?</h3>
+                        <p>The conversion and download time depend on the length of the video and your internet connection speed. Typically, it only takes a few moments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <h1>Video<span>Grabber</span></h1>
+                </div>
+                <p>© 2025 VideoGrabber. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
